@@ -7,12 +7,12 @@ Available in both original script and transliterations, in csv and json format.
 2. Scores-MusicXML: Containing the scores of the recording named with its MBID (Music Brainz ID)
 
 3. Textgrid: Textgrid file of of the recording named with its MBID (Music Brainz ID). Every Textgrid contains 9 tiers:
-      Sections (Muassa', Mahzuz or Insiraf)
-      Vocal/Instrumental sections
-      Sanaa' numeration
-      Separation in verses
-      Separation in half verses
-      Separation in half verses (redundant)
-      Lyric
-      Structure of the melodic content (High level)
-      Structure of the melodic content (Low level)
+      1. Sections (Muassa', Mahzuz or Insiraf)
+      2. Vocal/Instrumental sections
+      3. Sanaa' numeration
+      4. Separation in verses
+      5. Separation in half verses
+      6. Separation in half verses (redundant)
+      7. Lyric
+      8. Structure of the melodic content (High level)
+      9. Structure of the melodic content (Low level)
