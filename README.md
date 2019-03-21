@@ -16,3 +16,10 @@ Available in both original script and transliterations, in csv and json format.
       7. Lyric
       8. Structure of the melodic content (High level)
       9. Structure of the melodic content (Low level)
+      
+4. score-annotations: Onsets of every single half verse of the score
+5. score-segmented: Scores with the annotations in the lyrics of the file (musicxml)
+6. src: modules used to make the CSV of the annotations
+7. andalusian-VersesCSV.ipynb: Jupyter notebook to generate (8)
+8. arab_andalusian_verses.csv: File with all the information from the current annotations
+9. metadata-all-nawbas.csv: 
