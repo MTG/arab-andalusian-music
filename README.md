@@ -22,4 +22,5 @@ Available in both original script and transliterations, in csv and json format.
 6. src: functions used to make the CSV file of the annotations
 7. andalusian-VersesCSV.ipynb: Jupyter notebook to generate (8)
 8. arab_andalusian_verses.csv: File with all the information from the current annotations
-9. metadata-all-nawbas.csv
+9. metadata-all-nawbas.tsv
+This file is different than the metadata.tsv of the lyrics corpus found in https://zenodo.org/record/3337623. metadata-all-nawbas.tsv has metadata on all the recordings that have been processed by the MTG (whether they have lyrics or not). the metadata.csv of the lyrics dataset are only those that correspond to the dataset files.
