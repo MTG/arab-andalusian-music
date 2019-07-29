@@ -5,9 +5,10 @@ Repository with three main folders:
 Available in both original script and transliterations, in csv and json format.
 
 2. Scores-MusicXML: directory with the score transcriptions of the corpus recordings, each score named with the MBID (Music Brainz ID) of its corresponding recording.
-	original_scores:
+   	- original_scores:
 		the score transcriptions for some of the corpus recordings. In case any of the scores are found to diverge from the available transcription, it should be updated and committed to this directory.
-	score_segmented:
+		
+	- score_segmented:
 		some of the score transcriptions of the original_scores directory. These scores are annotated with their corresponding lyrics, but the actual lyrics are not used. Instead, the ‘code’ given to each line section (eg. mu.1.1.2) is written on the score portion it relates to.
 
 3. Textgrid: Textgrid file of of the recording named with its MBID (Music Brainz ID). Every Textgrid contains 9 tiers:
