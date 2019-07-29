@@ -14,9 +14,9 @@ Available in both original script and transliterations, in csv and json format.
 3. annotation_csvs: contains all csv annotations and the scripts used to generate them.
 - layer_annotations
     - textgrid2csv.praat: praat script used to generate csv documents from layers of the annotated textgrid textgrid. To generate the csvs from a textgrid, modify the textgrid2csv.praat contents to use the number of the layer which you are interested in generating a csv for. This script must be run from within praat.
-    - <mbid>/: folder corresponding to each mbid
-        - <mbid>-vocIns.csv: csv of the Vocal/Instrumental annotations layer
-        - <mbid>-sections.csv: csv of the sections annotation layer
+    - &lt;mbid&gt;/: folder corresponding to each mbid
+        - &lt;mbid&gt;-vocIns.csv: csv of the Vocal/Instrumental annotations layer
+        - &lt;mbid&gt;-sections.csv: csv of the sections annotation layer
 - score_annotations: csv corresponding to the annotated scores. annotations referenced by mbid.
 
 3. Textgrid: Folder with all Textgrid files to-date, each named with the Music Brainz ID (mbid) of the recording it belongs to. Every Textgrid should contain 9 tiers, one provided by Amin Chachoo, and the rest annotated by the MTG. They are:
