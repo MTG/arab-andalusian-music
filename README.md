@@ -1,5 +1,5 @@
 # Arab-Andalusian Music (AAM)
-Repository with three main folders:
+Folder Description:
 
 1. sanaa_lyrics: Compilation of the sanaa lyrics for the Arab Andalusian music collection.
 Available in both original script and transliterations, in csv and json format.
@@ -15,14 +15,19 @@ Available in both original script and transliterations, in csv and json format.
 		- &lt;mbid&gt;/ contains scores corresponding to the individual san'ai. They are cut according to the annotatated scores from the folder score_with_lyrics. This more granular division facilitates individual san'a analysis. The identifier for each san'a is the same as that given by the TextGrid annotations (in.1, mu.2, etc). To date, the scores of only 2 out of the 5 annotated recordings have been broken into san'aa fragments.
 		
 3. annotation_csvs: contains all csv annotations and the scripts used to generate them.
-- layer_annotations
-    - textgrid2csv.praat: praat script used to generate csv documents from layers of the annotated textgrid textgrid. To generate the csvs from a textgrid, modify the textgrid2csv.praat contents to use the number of the layer which you are interested in generating a csv for. This script must be run from within praat.
-    - &lt;mbid&gt;/: folder corresponding to each mbid
-        - &lt;mbid&gt;-vocIns.csv: csv of the Vocal/Instrumental annotations layer
-        - &lt;mbid&gt;-sections.csv: csv of the sections annotation layer
-	- &lt;mbid&gt;-contextual.csv: csv of the context annotation layer
-	- &lt;mbid&gt;-structure.csv: csv of the structure annotation layer
-- score_annotations: csv corresponding to the annotated scores. annotations referenced by mbid.
+
+	- layer_annotations:
+    		- textgrid2csv.praat: praat script used to generate csv documents from layers of the annotated textgrid textgrid. To generate the csvs from a textgrid, modify the textgrid2csv.praat contents to use the number of the layer which you are interested in generating a csv for. This script must be run from within praat.
+    		- &lt;mbid&gt;/: folder corresponding to each mbid
+        		- &lt;mbid&gt;-vocIns.csv: csv of the Vocal/Instrumental annotations layer
+                  	- &lt;mbid&gt;-sections.csv: csv of the sections annotation layer
+		  	- &lt;mbid&gt;-contextual.csv: csv of the context annotation layer
+		  	- &lt;mbid&gt;-structure.csv: csv of the structure annotation layer
+			
+	- score_annotations: csv corresponding to the annotated scores. annotations referenced by mbid. The annotations include the locations of lyrics at the level of line sections.
+	- arab_andalusian_verses.csv: File with all the information from the current annotations
+	- andalusian-VersesCSV.ipynb: Jupyter notebook to generate the above
+
 	
 
 4. Textgrid: Folder with all Textgrid files to-date, each named with the Music Brainz ID (mbid) of the recording it belongs to. Every Textgrid should contain 9 tiers, one provided by Amin Chachoo, and the rest annotated by the MTG. They are:
@@ -38,10 +43,5 @@ Available in both original script and transliterations, in csv and json format.
       
 The Arab Andalusian Corpus in Dunya has more TextGrid files available for the recordings, but they only include the first layer. This folder only includes the TextGrids that have been further annotated by the MTG.
       
-5. score-annotations: Onsets of every single half verse of the score
-6. score-segmented: Scores with the annotations in the lyrics of the file (musicxml)
-7. src: functions used to make the CSV file of the annotations
-8. andalusian-VersesCSV.ipynb: Jupyter notebook to generate (8)
-9. arab_andalusian_verses.csv: File with all the information from the current annotations
-10. metadata-all-nawbas.tsv
-This file is different than the metadata.tsv of the lyrics corpus found in https://zenodo.org/record/3337623. metadata-all-nawbas.tsv has metadata on all the recordings that have been processed by the MTG (whether they have lyrics or not). the metadata.csv of the lyrics dataset are only those that correspond to the dataset files.
+
+
